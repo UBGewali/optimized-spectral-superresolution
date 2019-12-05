@@ -1,5 +1,5 @@
 # Spectral Super-Resolution with Optimized Bands
-This repository contains MATLAB code for vegetation paramter estimation from hyperspectral data using single/multi-task Gaussian process with covariance functions based on well-established spectral comparison metrics.
+This repository contains code for joint optimization of the multispectral bands and the super-resolution network to reconstruct hyperspectral spectra from multispectral signal. 
 
 ### Usage
 ```bash
