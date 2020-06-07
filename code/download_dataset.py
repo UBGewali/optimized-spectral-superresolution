@@ -8,7 +8,7 @@ import argparse
 
 rootOutputDir = './dataset'
 #Dataset information (Arad and Ben-Shahar, Sparse Recovery of Hyperspectral Signal from Natural RGB Images, ECCV, 2016)
-datasetRootURL = "https://www.cs.bgu.ac.il/~icvl/img/hs_pub/" 
+datasetRootURL = "http://icvl.cs.bgu.ac.il/img/hs_pub/" 
 listOfParkFiles = ['omer_0331-1055.mat', 'omer_0331-1102.mat', 'omer_0331-1104.mat', 'omer_0331-1135.mat', 'omer_0331-1159.mat', 'prk_0328-1025.mat', 'prk_0328-1031.mat', 'prk_0328-1034.mat', 'prk_0328-1045.mat']
 listOfRuralFiles = [ 'eve_0331-1647.mat', 'eve_0331-1656.mat', 'eve_0331-1657.mat', 'eve_0331-1705.mat', 'rsh_0406-1413.mat']
 
@@ -35,6 +35,7 @@ def main():
     spectra = []
     for i in range(len(trainSubset)): 
         fileurl = datasetRootURL + trainSubset[i]
+        print(fileurl)
         print("Downloading "+fileurl+"...............")
         wget.download(fileurl, 'tmp.mat')
         print('')
